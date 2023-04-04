@@ -290,6 +290,7 @@ impl LocalName for TableElem {
             Lang::FRENCH => "Tableau",
             Lang::GERMAN => "Tabelle",
             Lang::ITALIAN => "Tabella",
+            Lang::JAPANESE => "表", // FIXME: Should be displayed as 第<N>表
             Lang::PORTUGUESE => "Tabela",
             Lang::RUSSIAN => "Таблица",
             Lang::ENGLISH | _ => "Table",

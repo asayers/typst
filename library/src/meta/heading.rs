@@ -233,6 +233,17 @@ impl LocalName for HeadingElem {
             Lang::FRENCH => "Chapitre",
             Lang::GERMAN => "Abschnitt",
             Lang::ITALIAN => "Sezione",
+            Lang::JAPANESE =>"款", // FIXME: Should be displayed as 第<N>款
+            // TODO: Use the correct word based on the level?
+            //
+            //     match self.level(StyleChain::default()).into() {
+            //         1 => "款",
+            //         2 => "項",
+            //         3 => "目",
+            //         _ => "節",
+            //     }
+            //
+            // But we don't do "subsection" etc. in English...
             Lang::PORTUGUESE => "Seção",
             Lang::RUSSIAN => "Раздел",
             Lang::ENGLISH | _ => "Section",
